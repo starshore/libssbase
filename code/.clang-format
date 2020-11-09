@@ -1,0 +1,70 @@
+# We'll use defaults from the LLVM style, but with 4 columns indentation.
+BasedOnStyle: LLVM
+
+# 制表符宽度
+IndentWidth: 4
+# 列限制
+ColumnLimit: 100
+
+# 语句块新行规则判定
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterNamespace: true
+  AfterClass: true
+  AfterFunction: true
+  AfterStruct: false
+  AfterUnion: false
+  AfterEnum: false
+  BeforeCatch: true
+  BeforeElse: true
+  AfterControlStatement: false
+  IndentBraces: false
+
+# 括号后水平对齐参数
+AlignAfterOpenBracket: Align
+# 对其连续的赋值语句
+AlignConsecutiveAssignments: true
+# 对其连续的声明语句
+AlignConsecutiveDeclarations: true
+# 对齐连续的C/C++预处理程序宏
+AlignConsecutiveMacros: true
+# 在最右边的列中对齐转义的换行符
+AlignEscapedNewlines: Right
+# 对其行尾注释
+AlignTrailingComments: true
+
+# 自动收缩的一些细节
+AllowAllArgumentsOnNextLine: false
+AllowAllConstructorInitializersOnNextLine: false
+AllowAllParametersOfDeclarationOnNextLine: false
+AllowShortCaseLabelsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: None
+
+
+# 函数声明或函数定义的参数要么全部位于同一行，要么各占一行
+BinPackParameters: false
+# 三元运算符将在换行符后放置
+BreakBeforeTernaryOperators: true
+
+# 构造函数初始化对其方式
+BreakConstructorInitializers: BeforeColon
+BreakInheritanceList: BeforeColon
+
+# 格式化时不允许中断字符串文字
+BreakStringLiterals: false
+
+# 预处理语句缩进
+IndentPPDirectives: BeforeHash
+
+# 命名空间不缩进
+NamespaceIndentation: None
+
+# foreach宏
+ForEachMacros:
+  - 'list_for_each'
+  - 'list_for_each_entry'
+  - 'rbtree_for_each'
+  - 'rbtree_for_each_entry'
+
+# 最新C++标准风格
+Standard: Latest
